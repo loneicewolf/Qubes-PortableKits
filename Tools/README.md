@@ -5,3 +5,9 @@
   - OpenPuff
   - LibObfuscate
   - MultiObfuscator
+
+
+- https://github.com/hasherezade/crypto_utils
+```sh
+paste <(od -An -vtu1 -w1 /tmp/F1) <( od -An -vtu1 -w1 /tmp/F2)  |  awk 'NF!=2{exit}; {printf "%c", xor($1,$2)}'
+```
